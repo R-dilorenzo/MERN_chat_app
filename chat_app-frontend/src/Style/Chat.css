@@ -1,0 +1,93 @@
+.chat {
+  display: flex;
+  flex-direction: column;
+  flex: 0.65;
+  background-color: white;
+  max-width: 65vw;
+  height: 100vh;
+}
+
+.chat__header {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid lightgray;
+  background-color: #f5f5f5;
+}
+
+.chat__header > h4 {
+  font-weight: 500;
+  color: gray;
+}
+
+.chat__name {
+  color: black;
+}
+
+.chat__input {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border-top: 1px solid lightgray;
+  background-color: #f5f5f5;
+}
+
+.chat__input > form {
+  flex: 1;
+}
+
+.chat__logout {
+  cursor: pointer;
+  color: #284b6e;
+  margin-left: 8px;
+}
+
+.chat__input > form > input {
+  width: 95%;
+  outline-width: 0;
+  border: 1px solid lightgray;
+  border-radius: 999px;
+  padding: 5px;
+  outline: none;
+}
+
+.chat__input > form > button {
+  display: none;
+}
+
+.chat__messages {
+  flex: 1;
+  overflow: scroll;
+}
+
+.chat__headerRight {
+  display: flex;
+  align-items: center;
+}
+
+.chat__dialogDiv {
+  display: flex;
+  align-items: center;
+}
+
+.chat__dialogDiv > h2 {
+  margin-right: 10px;
+}
+
+.chat__dialogDiv > img {
+  max-width: 50vw;
+  max-height: 50vh;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Hidde scrollbar for Chrome, Safari and Opera */
+.chat__messages::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hidde scrollbar for IE,Edge and Firefox */
+.chat__messages {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}

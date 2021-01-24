@@ -1,0 +1,28 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  width: 60vw;
+  margin: auto;
+  margin-top: 10vh;
+  min-height: 500px;
+}
+
+.home__link {
+  margin-left: 0%;
+  width: auto;
+}
+
+.home__logo {
+  max-width: 60vw;
+  max-height: 50vh;
+  position: relative;
+}
+
+svg {
+  max-width: 100%;
+  max-height: 100%;
+}
+
